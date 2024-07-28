@@ -23,6 +23,7 @@ class Solution:
                 index = i
         
         return index
+print( Solution().rowWithMax1s([[0, 0, 0, 1], [0, 1, 1, 1], [1, 1, 1, 1], [0, 0, 0, 0]])   )
             
 ## Time Complexity: O(nlogm)
 ## Space Complexity: O(1)
