@@ -7,4 +7,4 @@ This repository contains implementations and examples of various Data Structures
 To get started with this repository, clone it to your local machine using the following command:
 
 ```bash
-git clone https://github.com/your-username/DSA.git
+git clone https://github.com/nikleshclark/DSA.git
