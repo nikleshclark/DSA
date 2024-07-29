@@ -18,8 +18,8 @@ You can explore the different data structures and algorithms by navigating throu
 
 For example, to run a specific algorithm, navigate to its directory and execute the corresponding script:
 ```bash
-cd algorithms/sorting
-python quicksort.py
+cd POTD
+python Remove_Duplicates.py
 ```
 ## Contribution
 Contributions are welcome! If you would like to contribute to this repository, please follow these steps:
