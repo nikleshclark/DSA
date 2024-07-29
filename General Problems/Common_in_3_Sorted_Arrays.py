@@ -30,7 +30,8 @@ class Solution:
                 result.append(i)
                 hmap[i]= 0
         return [i for i in result] if len(result) > 0 else [-1]
-    
+print(Solution().commonElements([1, 5, 10, 20, 40, 80],[6, 7, 20, 80, 100],[3, 4, 15, 20, 30, 70, 80, 120]))
+
 # Time complexity: O(n)
 # Space complexity: O(n)
 # Approach: Use two pointer approach to find the common elements in 3 sorted arrays.
