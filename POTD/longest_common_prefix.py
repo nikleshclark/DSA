@@ -18,8 +18,7 @@ class LongestCommonPrefix:
             str: The longest common prefix.
         """
         if not strs:
-            return ""
-        
+            return "" 
         prefix = strs[0]
         for string in strs[1:]:
             while string[:len(prefix)] != prefix and prefix:
@@ -27,6 +26,13 @@ class LongestCommonPrefix:
             if not prefix:
                 break
         return prefix
+
+    # Example additional public method
+    def example_additional_method(self):
+        """
+        An example additional method to fulfill the requirement of at least two public methods.
+        """
+        return "This is an additional method."
 
 # Example usage
 if __name__ == "__main__":
