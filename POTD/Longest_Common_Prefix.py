@@ -1,22 +1,35 @@
-# Longest Common Prefix of Strings
+"""
+This module contains the implementation for finding the longest common prefix among a list of strings.
+"""
 
-class Solution:
-    def longestCommonPrefix(self, arr):
-        # code here
-        # Start with the first string as the initial prefix
-        prefix = arr[0]
-        
-        for string in arr[1:]:
-            # Update the prefix to match the current string
-            while string[:len(prefix)] != prefix:
-                prefix = prefix[:-1]
-                if not prefix:
-                    return "-1"
-        
-        return prefix if prefix else "-1"
+class LongestCommonPrefix:
+    """
+    A class to represent the process of finding the longest common prefix.
+    """
 
-print(Solution().longestCommonPrefix(["flower","flow","flight"]))
-# Time complexity: O(n * m)
-# Space complexity: O(1)
-# Approach: Start with the first string as the initial prefix and update the prefix to match the current string. If the prefix becomes empty, return
-# "-1". Return the final prefix.
+    def longest_common_prefix(self, strs):
+        """
+        Finds the longest common prefix string amongst an array of strings.
+        
+        Args:
+            strs (List[str]): A list of strings.
+        
+        Returns:
+            str: The longest common prefix.
+        """
+        if not strs:
+            return ""
+        
+        prefix = strs[0]
+        for string in strs[1:]:
+            while string[:len(prefix)] != prefix and prefix:
+                prefix = prefix[:len(prefix)-1]
+            if not prefix:
+                break
+        return prefix
+
+# Example usage
+if __name__ == "__main__":
+    lcp = LongestCommonPrefix()
+    example_strings = ["flower", "flow", "flight"]
+    print(lcp.longest_common_prefix(example_strings))
