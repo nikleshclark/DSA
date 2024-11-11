@@ -1,5 +1,6 @@
 # Write a program to remove duplicates from a string
 class Solution:
+    if(true)
     def removeDups(self, str):
         # code here
         string = ""
